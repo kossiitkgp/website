@@ -58,7 +58,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">
-                            <img src="images/logo2.jpg" alt=""> <!--Changed logo-->
+                            <img src="images/logo2.png" alt="">
                         </a>
                  </div><!--Navbar header End-->
                  	<nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
@@ -87,7 +87,7 @@
            	<div class="carousel-inner">
            	 	<div class="item active">
            	 		<div class="overlay-slide">
-           	 			<img src="images/banner/banner_koss1.jpg" alt="" class="img-responsive">
+           	 			<img src="images/banner/p5.jpg" alt="" class="img-responsive">
            	 		</div>
            	 		<div class="carousel-caption">
                	 		<div class="col-md-12 col-xs-12 text-center">
@@ -100,7 +100,7 @@
            	 	</div>
                 <div class="item">
                     <div class="overlay-slide">
-                        <img src="images/banner/banner_koss2.jpg" alt="" class="img-responsive">
+                        <img src="images/banner/p3.jpg" alt="" class="img-responsive">
            	 		</div>
            	 		<div class="carousel-caption">
                	 		<div class="col-md-12 col-xs-12 text-center">
