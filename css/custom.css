@@ -110,7 +110,7 @@ a{
 .feature_title{
     position:relative;
     padding-bottom:10px;
-    color:#EE3B24!important;
+    color:#5498CC;/*#EE3B24!important;*/
     width: 45%;
     margin: 10px auto;
     font-size: 40px;
@@ -155,7 +155,7 @@ a{
     border: medium none;
     vertical-align: middle;
     cursor: pointer;
-    border:1px solid#EE3B24;
+    border:1px solid#5498CC;/*#EEB24*/
     white-space: nowrap;
     font-size: 16px;
     line-height: 1.42857;
@@ -167,7 +167,7 @@ a{
     transition: all .3s ease-in-out;
 }
 .btn-dark:hover{
-    background: #EE3B24;
+    background: #5498CC;/*#EEB24*/
     color: #fff;
 }
 .feature-tab,.team-items,.pricing,.single_blog ,#testimonial .owl-carousel .owl-wrapper,.contact_full{
@@ -972,10 +972,10 @@ padding: 8px 15px;
     margin-top: 20px;
 }
 .main-tab-content .c-tab a{
-    color: #EE3B24;
+    color: #5498CC;/*#EEB24*/
     text-transform: uppercase;
     font-weight: 700;
-    border-bottom: 1px solid#EE3B24;
+    border-bottom: 1px solid#5498CC;/*#EEB24*/
     padding-top: 7px;
 }
 .feature-tab{
@@ -1020,7 +1020,7 @@ padding: 8px 15px;
 }
 
 .main-tab-list li.active .f-icon i{
-    color: #E93B25!important;
+    color: #5498CC!important;/*#E93B25!important;*/
     -webkit-transition: all .3s linear 0s;
     -o-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
@@ -1030,7 +1030,7 @@ padding: 8px 15px;
     font-size: 14px;
 }
 .main-tab-list > li.active {
-    background: #EE3B24!important;
+    background: #5498CC;/*#EE3B24!important;*/
     position: relative;
 }
 .main-tab-list > li.active:after{
@@ -1514,7 +1514,7 @@ padding: 8px 15px;
 .testimonial-content h3.name span:after {
     content: "";
     width: 10%;
-    background: red;
+    background: blue;/*red;*/
     border-bottom: 1px solid #CCC;
     height: 1px;
     position: absolute;
@@ -1829,8 +1829,8 @@ padding: 8px 15px;
     
    
 #back-top .btn-primary{
-    background: #EE3B24;
-    border-color: #EE3B24;
+    background: #5498CC;/*#EEB24*/
+    border-color: #5498CC;/*#EEB24*/
     padding: 0px;
     font-size: 18px;
     width: 36px;
@@ -1838,7 +1838,7 @@ padding: 8px 15px;
 }
   
 #back-top a:hover{
-    background: #EE3B24;
+    background: #5498CC;/*#EEB24*/
     opacity: 1;
 }
 
@@ -1898,7 +1898,7 @@ padding: 8px 15px;
     clear:both;
 }
 .single_blog h4:hover{
-    color: #EE3B24;
+    color: #5498CC;/*#EEB24*/
 }
 .single_blog p{
     margin: 8px 0px;
@@ -2350,7 +2350,7 @@ padding: 8px 15px;
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background: transparent;
-    color: #EE3B24!important;
+    color: #5498CC!important;/*#EE3B24!important;*/
 }
 .navbar-inverse .navbar-nav >li> a{
     color: #eee!important;
@@ -2370,7 +2370,7 @@ padding: 8px 15px;
     font-weight: 600;
 }
 .hero-title span{
-    color: #EE3B24;
+    color: #5498CC;/*#EE3B24*/
 }
 .hero-description {
     margin-bottom: 30px;
@@ -2459,7 +2459,7 @@ iframe{
 .video-text .panel-default{}
 .video-text .panel-group .panel-heading{
     border-radius: 0px;
-    border-color: #EE3B24;
+    border-color: #5498CC;/*#EEB24*/
     position: relative;
     padding: 7px 15px;
     background: #FAFAFA;
@@ -2482,7 +2482,7 @@ iframe{
 }
 .video-text .panel-group  h4.panel-title a:after {
     font-family: FontAwesome;
-    color: #EE3B24;
+    color: #5498CC;/*#EE3B24*/
     font-size: 14px;
     right: 0px;
     position: absolute;
@@ -2496,7 +2496,7 @@ iframe{
 }
 
 .video-text .panel-group .panel-heading.active{
-    border: 1px solid#EE3B24;
+    border: 1px solid#5498CC;/*#EEB24*/
 }
 
 
@@ -2555,12 +2555,12 @@ iframe{
     top: 0px;
     text-align: center;
     content: "";
-    background: none repeat scroll 0% 0% #F05743;
+    background: none repeat scroll 0% 0% #A9CBE5;/*#F05743;*/
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .video-text .panel-group .p2.active{
-    background:#EE3B24;
+    background:#5498CC;/*#EE3B24*/
     color: #fff;
     padding: 7px 0px;
     padding-left: 15px;
@@ -2612,7 +2612,7 @@ iframe{
     position: absolute;
     width: 2px;
     height: 110px;
-    background: #EE3B24;
+    background: #5498CC;/*#EE3B24*/
     left: 10px;
     top: -10px;
 
@@ -2622,7 +2622,7 @@ iframe{
     position: absolute;
     width: 2px;
     height: 110px;
-    background: #EE3B24;
+    background: #5498CC;/*#EEB24*/
     right: 10px;
     top: -10px;
 }
