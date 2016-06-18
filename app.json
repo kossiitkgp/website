@@ -1,0 +1,8 @@
+{
+  "name": "KOSS Website",
+  "description": "A Django website",
+  "image": "heroku/python",
+  "repository": "https://github.com/kossiitkgp",
+  "keywords": ["python", "django" ],
+  "addons": []
+}
