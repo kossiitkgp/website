@@ -35,6 +35,10 @@
         <link rel="stylesheet" href="{% static "css/red.css" %}"/>
         <!-- Template styles-->
         <link rel="stylesheet" href="{% static "css/custom.css" %}"/>
+
+        <link rel="stylesheet" type="text/css" href="{% static "css/custom-image.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/ihover.css" %}">
+
         <!-- Responsive -->
         <link rel="stylesheet" href="{% static "css/responsive.css" %}"/>
         <link rel="stylesheet" href="{% static "css/jquery.fancybox8cbb.css?v=2.1.5" %}" type="text/css" media="screen" />
@@ -297,198 +301,106 @@
         <a data-filter=".logo"  href="#" class="">Hackathon</a><!--logo=hackathon -->
     </div>
     <div class="clearfix"></div>
-        <div class="text-center ">
-              <ul class="portfolio-wrap" id="portfolio_items">
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio identity ">
-                        <figure>
-                            <img src="{% static "images/portfolio/fresher_intro/pic1.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/fresher_intro/pic1.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
+        <!-- <div class="text-center "> -->
+            <ul class="portfolio-wrap" id="portfolio_items">
+              <div class="container">
+              <div class="row" style="padding-top: 5%; padding-bottom: 2%;">
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-push-1 single-portfolio identity " style="padding-top: 5%; padding-bottom: 5%;">
+                        <div class="ih-item circle colored effect4 bottom_to_top"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/fresher_intro/pic1.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
                     </li>
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio web-design">
-                        <figure>
-                        <img src="{% static "images/portfolio/gsoc/gsoc1.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/gsoc/gsoc1.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                                </figcaption>
-                        </figure>
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-push-1 single-portfolio web-design" style="padding-top: 5%; padding-bottom: 5%;">
+
+                        <div class="ih-item circle colored effect4 bottom_to_top"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/gsoc/gsoc1.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
                     </li>
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio web-design">
-                        <figure>
-                        <img src="{% static "images/portfolio/gsoc/gsoc2.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/gsoc/gsoc2.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                                </figcaption>
-                        </figure>
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-push-1 single-portfolio web-design" style="padding-top: 5%; padding-bottom: 5%;">
+
+                        <div class="ih-item circle colored effect4 bottom_to_top"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/gsoc/gsoc2.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
                     </li>
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio logo">
-                        <figure>
-                            <img src="{% static "images/portfolio/hackathon.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/hackathon.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
+                    
+
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-push-1 single-portfolio graphic" style="padding-top: 5%; padding-bottom: 5%;">
+
+                         <div class="ih-item circle colored effect4 bottom_to_top"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/android/workshop1.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
+                    </li>
+</div>
+<div class="row">
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-offset-2 single-portfolio graphic" style="padding-top: 5%; padding-bottom: 5%;">
+
+                        <div class="ih-item circle colored effect4 top_to_bottom"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/android/workshop1.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
                     </li>
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic">
-                        <figure>
-                            <img src="{% static "images/portfolio/android/workshop1.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/android/workshop1.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic" style="padding-top: 5%; padding-bottom: 5%;">
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic">
-                        <figure>
-                            <img src="{% static "images/portfolio/android/workshop2.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/android/workshop2.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-<!--
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio logo web-design">
-                        <figure>
-                            <img src="images/portfolio/p5.jpg" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="images/portfolio/p5.jpg" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
--->
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic">
-                        <figure>
-                            <img src="{% static "images/portfolio/printing_3d/pic2.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/printing_3d/pic2.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
+                        <div class="ih-item circle colored effect4 top_to_bottom"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/printing_3d/pic2.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
                     </li>
 
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic">
-                        <figure>
-                            <img src="{% static "images/portfolio/printing_3d/pic1.jpg" %}" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="{% static "images/portfolio/printing_3d/pic1.jpg" %}" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-<!--
-<!--
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic identity">
-                        <figure>
-                            <img src="images/portfolio/p3.jpg" alt="" />
-                            <figcaption>
-                                <h5>Creative Zoe</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="images/portfolio/p3.jpg" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </p>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
+                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio graphic" style="padding-top: 5%; padding-bottom: 5%;">
 
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio web-design graphic">
+                        <div class="ih-item circle colored effect4 top_to_bottom"><a href="#">
+                        <div class="img"><img src="{% static "images/portfolio/printing_3d/pic1.jpg" %}" alt="img"></div>
+                        <div class="info">
+                        <h3>Heading</h3>
+                        <p>Description goes here</p>
+                        </div>
+                        </a>
+                        </div>
+                    </li>
+</div>                
+<!-- <div class="row">
+                    <li class="col-xs-12 col-sm-6 col-md-3 col-md-offset-5 single-portfolio logo">
                         <figure>
-                            <img src="images/portfolio/p7.jpg" alt="" />
+                            <img src="{% static "images/portfolio/hackathon.jpg" alt="" / style="padding-top: 10%">
                             <figcaption>
                                 <h5>Creative Zoe</h5>
                                 <p class="links">
                                     <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="images/portfolio/p7.jpg" data-rel="prettyPhoto" class="img-responsive">
+                                    <a href="{% static "images/portfolio/hackathon.jpg" data-rel="prettyPhoto" class="img-responsive">
                                         <i class="fa fa-plus"></i>
                                     </a>
                                 </p>
@@ -498,13 +410,13 @@
                             </figcaption>
                         </figure>
                     </li>
--->
+</div> -->
+</div>
                 </ul>
-        </div><!-- Container Full End -->
-
-
-</section>
-
+        <!--/div--><!-- Container Full End -->
+       
+        
+</section> 
  <!-- Portfolio Section End -->
 
 <div class="clearfix"></div>
@@ -849,8 +761,8 @@
             <div id="owl-demo" class="owl-carousel owl-theme team-items">
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/smruti.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/smruti.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -864,12 +776,22 @@
                         </div>
                         <h3>Smruti Ranjan Swain</h3>
                         <h5>Manager</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/smruti.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/himanshu_mishra.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/himanshu_mishra.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -883,12 +805,22 @@
                         </div>
                         <h3>Himanshu Mishra</h3>
                         <h5>Executive Lead (Projects and Open source)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/himanshu_mishra.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/pranav.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/pranav.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -902,12 +834,22 @@
                         </div>
                         <h3>Pranav Kumar</h3>
                         <h5>Executive Lead (Events and Workshop)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/pranav.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/avijit.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/avijit.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -921,12 +863,22 @@
                         </div>
                         <h3>Avijit Ghosh</h3>
                         <h5>Executive Lead (Publicity and Sponsorship)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/avijit.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/kshitij.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/kshitij.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -940,12 +892,22 @@
                         </div>
                         <h3>Kshitij Saraogi</h3>
                         <h5>Executive Head (Projects and Open Source)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/kshitij.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/ritam.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/ritam.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -959,12 +921,22 @@
                         </div>
                         <h3>Ritam Dutt</h3>
                         <h5>Executive Head (Events and Workshops)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/ritam.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/pranay.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/pranay.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -978,12 +950,22 @@
                         </div>
                         <h3>Pranay Dhote</h3>
                         <h5>Executive Head (Publicity and Sponsorship)</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/pranay.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/manish.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/manish.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -997,12 +979,22 @@
                         </div>
                         <h3>Manish Ayushman</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/manish.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/amit.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/amit.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1016,12 +1008,22 @@
                         </div>
                         <h3>Amit Agarwal</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/amit.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                 <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/mayank.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/mayank.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1035,12 +1037,22 @@
                         </div>
                         <h3>Mayank Jindal</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/mayank.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                  <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/aakash.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/aakash.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1054,12 +1066,22 @@
                         </div>
                         <h3>Aakash Singh</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/aakash.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
                  <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/nishant.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/nishant.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1073,13 +1095,23 @@
                         </div>
                         <h3>Nishant Nikhil</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/nishant.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
 
                  <div class="item text-center">
                     <div class="single-member">
-                        <div class="overlay-hover">
-                            <img src="{% static "images/team/anirban.jpg" %}" alt="" class="img-responsive">
+                    <!--    <div class="overlay-hover">
+                            <img src="{% static "images/team/anirban.jpg" alt="" class="img-responsive">
                             <div class="overlay-effect">
                                 <ul class="social list-inline">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1093,9 +1125,19 @@
                         </div>
                         <h3>Anirban Mitra</h3>
                         <h5>Executive Member</h5>
+                        -->
+                         <div class="ih-item square colored effect4"><a href="#">
+                            <div class="img"><img src="{% static "images/team/anirban.jpg" %}" alt="img"></div>
+                            <div class="mask1"></div>
+                            <div class="mask2"></div>
+                            <div class="info">
+                              <h3>Heading here</h3>
+                              <p>Description goes here</p>
+                            </div></a>
+                        </div>
                     </div>
                 </div>  <!-- item wrapper end -->
-
+                
 
             </div>
         </div>
