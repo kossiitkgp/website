@@ -11,4 +11,4 @@ def index(request):
 def events(request):
     context = {}
 
-    return render(request, 'home/events.html', context)
+    return render(request, 'home/index.html', context)
