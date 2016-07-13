@@ -10,13 +10,13 @@
     <!-- Basic Page Needs
     ================================================== -->
         <meta charset="utf-8">
-        <title>Cypras-One page html5 template</title>
+        <title>KOSS-Kharagpur Open Source Society</title>
         <meta name="description" content="">
         <!-- Mobile Specific Metas
     ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="logo2.jpg" />
+        <link rel="shortcut icon" href="{% static "images/logo2.jpg"%}" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
          <!-- CSS
          ================================================== -->
@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
         <!-- FontAwesome -->
         <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
-        <!-- Animation -->
+        <!-- Animation -->what we do
         <link rel="stylesheet" href="{% static "css/animate.css" %}"/>
         <!-- Owl Carousel -->
         <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}"/>
@@ -71,7 +71,7 @@
                         <ul class="nav navbar-nav navbar-right ">
                             <li class="active"> <a href="#slider_part" >Home </a></li>
                          <!--   <li><a href="#service"  >Services</a> </li> --> <!--Commented out the service link-->
-                            <li><a href="#portfolio">Events </a> </li>
+                            <li><a href="{% url 'home:events' %}">Events </a> </li>
                             <li><a href="#about" >About Us </a> </li>
                             <li><a href="#team" >Our Team </a> </li>
                           <!--  <li><a href="#blog" >Blog</a> </li>  --> <!--Commented out blog link -->
@@ -202,7 +202,7 @@
             </div>  --><!-- Row End -->
       <!--  </div>  --><!-- Container End -->  <!--Commented out the service section-->
    <!-- </section>-->
-    -->  <!--Commented out the service section-->
+     <!--Commented out the service section-->
 <!-- Service Area End -->
 <!-- About details start -->
 <!--Commented out About details section-->
@@ -278,7 +278,8 @@
 <!-- About details end -->
 
 <!-- Portfolio works Start -->
-
+<!-- Commenting our works secton-->
+<!--
     <section id="portfolio">
         <div class="container">
             <div class="row">
@@ -288,20 +289,28 @@
                         <h4 class="feature_sub">Events we conduct </h4>
                         <div class="divider"></div>
                     </div>
-                </div>  <!-- Col-md-12 End -->
+                </div>  --><!-- Col-md-12 End -->
+                <!--
             </div>
         </div>
 
 
     <div id="isotope-filter" class="skew3 text-center">
-        <a data-filter="*"  href="#" class="active ">All</a> <!--make divisions All Hackathon, opensource, printing_workshop,introduction and member selection-->
-        <a data-filter=".identity"  href="#" class="">Introduction & member selection</a><!-- Identity =introduction and member selection=identity-->
-        <a data-filter=".web-design" href="#"  class="">Open Source</a><!--web-design=opensource-->
-        <a data-filter=".graphic"  href="#" class="">Worksops</a><!--graphic=workshop-->
-        <a data-filter=".logo"  href="#" class="">Hackathon</a><!--logo=hackathon -->
+        <a data-filter="*"  href="#" class="active ">All</a> --><!--make divisions All Hackathon, opensource, printing_workshop,introduction and member selection-->
+        <!--
+        <a data-filter=".identity"  href="#" class="">Introduction & member selection</a>--><!-- Identity =introduction and member selection=identity-->
+        <!--
+        <a data-filter=".web-design" href="#"  class="">Open Source</a>--><!--web-design=opensource-->
+        <!--
+        <a data-filter=".graphic"  href="#" class="">Worksops</a>--><!--graphic=workshop-->
+        <!--
+        <a data-filter=".logo"  href="#" class="">Hackathon</a>--><!--logo=hackathon -->
+        <!--
     </div>
     <div class="clearfix"></div>
+    -->
         <!-- <div class="text-center "> -->
+        <!--
             <ul class="portfolio-wrap" id="portfolio_items">
               <div class="container">
               <div class="row" style="padding-top: 5%; padding-bottom: 2%;">
@@ -391,7 +400,8 @@
                         </a>
                         </div>
                     </li>
-</div>                
+</div> 
+-->               
 <!-- <div class="row">
                     <li class="col-xs-12 col-sm-6 col-md-3 col-md-offset-5 single-portfolio logo">
                         <figure>
@@ -411,12 +421,15 @@
                         </figure>
                     </li>
 </div> -->
+<!--
 </div>
                 </ul>
+                -->
         <!--/div--><!-- Container Full End -->
        
-        
+     <!--   
 </section> 
+-->
  <!-- Portfolio Section End -->
 
 <div class="clearfix"></div>
@@ -588,8 +601,8 @@
 <!-- About us End -->
 
 
-<!-- Counter Strat -->
-
+<!-- Counter Strat --><!--Commenting out the counter section!-->
+<!--
 <section id="counter_area">
         <div class="facts">
             <div class="container">
@@ -671,7 +684,7 @@
                         <h6>Mails</h6>
                     </div>
                 </div>
-            </div> <!-- Conatainer End -->
+            </div> --><!-- Conatainer End -->
         </div>  <!-- Fact div ENd -->
 </section>
 <!-- Counter End -->
@@ -1414,7 +1427,8 @@
 <!-- bLOG End -->
 
 <!-- Testimonial Start -->
-
+<!--Commenting out the testimonial-->
+<!--
 <section id="testimonial" class="wow fadeInUp">
     <div class="container">
         <div class="row">
@@ -1424,7 +1438,8 @@
                     <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
                     <div class="divider"></div>
                 </div>
-            </div>  <!-- Col-md-12 End -->
+            </div> --> <!-- Col-md-12 End -->
+<!--
         </div>
                 <div class="row">
                     <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
@@ -1462,7 +1477,9 @@
                           </div>
                         </div>
                     </div>
+                    -->
                     <!-- Navigation start -->
+                    <!--
                     <div class="customNavigation cyprass-carousel-controller">
                         <a class="prev left">
                           <i class="fa fa-chevron-left"></i>
@@ -1471,10 +1488,13 @@
                           <i class="fa fa-chevron-right"></i>
                         </a>
                   </div>
+                  -->
                   <!-- Navigation ENd -->
+                  <!--
                 </div>
-            </div> <!-- Row End -->
-</section> <!-- Section Testimonial End -->
+            </div> --><!-- Row End -->
+            <!--
+</section>--> <!-- Section Testimonial End -->
 
 <!-- Testimonial Area End -->
 
@@ -1583,7 +1603,7 @@
         </div>
     </div>
 </section>
-
+<!--
 <div id="g-map" class="no-padding">
   <div class="container-fluid">
     <div class="row">
@@ -1591,6 +1611,7 @@
     </div>
   </div>
 </div>
+-->
 <!-- Footer Area Start -->
 
 <section id="footer">
@@ -1603,7 +1624,7 @@
                         <ul>
                             <li><a href="#about">Home</a></li>
                           <!--  <li><a href="#service">Service</a></li>  -->
-                            <li><a href="#portfolio">Events</a></li>
+                            <li><a href="temp.html">Events</a></li>
                            <!-- <li><a href="#blog">Blog</a></li>   -->
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -1628,11 +1649,11 @@
                     <div class="footer_menu_contact">
                         <ul>
                             <li> <i class="fa fa-home"></i>
-                                <span> Patel Hall of residence, IIT Kharagpur  </span></li>
+                                <span>IIT Kharagpur  </span></li>
                             <li><i class="fa fa-globe"></i>
-                                <span> 8609289280</span></li>
-                            <li><i class="fa fa-phone"></i>
-                                <span> ranjan.smruti75@gmail.com</span></li>
+                                <span> kossiitkgp@gmail.com</span></li>
+                            <!--<li><i class="fa fa-phone"></i>
+                                <span> ranjan.smruti75@gmail.com</span></li>-->
                            <!-- <li><i class="fa fa-map-marker"></i>-->
                             <!--<span> www.web.com</span></li>-->
                         </ul>
