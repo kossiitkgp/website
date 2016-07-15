@@ -62,28 +62,28 @@ images <!DOCTYPE html>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{% url 'home:index' %}">
                             <img src="{% static "images/logo2.jpg" %}" alt="" class="img-responsive">
                         </a>
                  </div><!--Navbar header End-->
                   <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active">
-                                <a href="index.html#slider_part" data-scroll  class="active">Home </a>
+                                <a href="{% url 'home:index' %}" data-scroll  class="active">Home </a>
                             </li>
                             
                             <li>
-                              <a href="index.html#portfolio" data-scroll  >Events </a>
+                              <a href="{% url 'home:events' %}" data-scroll  >Events </a>
                             </li>
                             <li>
-                                <a href="index.html#about" data-scroll>About Us </a>
+                                <a href="{% url 'home:index' %}#about" data-scroll>About Us </a>
                             </li>
                             <li>
-                              <a href="index.html#team" data-scroll  >Our Team </a>
+                              <a href="{% url 'home:index' %}#team" data-scroll  >Our Team </a>
                             </li>
 
                             <li>
-                              <a href="index.html#contact" data-scroll >Contact Us</a>
+                              <a href="{% url 'home:index' %}#contact" data-scroll >Contact Us</a>
                             </li>
                         </ul>
                      </nav>
@@ -423,11 +423,6 @@ The applicability of 3D printing is immense. It finds its use in engineering rap
                     <!-- <h4>Share this :</h4> -->
                     <ul class="social-contact list-inline text-left">
                         <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -583,13 +578,12 @@ The applicability of 3D printing is immense. It finds its use in engineering rap
                     <h3 class="menu_head">Main Menu</h3>
                     <div class="footer_menu">
                         <ul>
-                            <li><a href="#about">Home</a></li>
+                            <li><a href="{% url 'home:index' %}">Home</a></li>
                            <!-- <li><a href="#service">Service</a></li>-->
                            
-                            <li><a href="#portfolio">Events</a></li>
                            <!-- <li><a href="#blog">Blog</a></li>-->
 
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="{% url 'home:index' %}#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -613,15 +607,15 @@ The applicability of 3D printing is immense. It finds its use in engineering rap
                 <div class="col-md-3 col-sm-6" style="position: relative; left:15%;">
                     <h3 class="menu_head">Contact us</h3>
                     <div class="footer_menu_contact">
-                        <ul>
+                         <ul>
                             <li> <i class="fa fa-home"></i>
-                                <span> Patel Hall of residence, IIT Kharagpur  </span></li>
+                                <span>IIT Kharagpur  </span></li>
                             <li><i class="fa fa-globe"></i>
-                                <span> 8609289280</span></li>
-                            <li><i class="fa fa-phone"></i>
-                                <span> ranjan.smruti75@gmail.com</span></li>
+                                <span> kossiitkgp@gmail.com</span></li>
+                            <!--<li><i class="fa fa-phone"></i>
+                                <span> ranjan.smruti75@gmail.com</span></li>-->
                            <!-- <li><i class="fa fa-map-marker"></i>-->
-                            <!--<span> www.web.com</span></li>-->   
+                            <!--<span> www.web.com</span></li>-->
                         </ul>
                     </div>
                 </div>
@@ -660,11 +654,6 @@ The applicability of 3D printing is immense. It finds its use in engineering rap
                     <div class="footer_mid pull-right">
                         <ul class="social-contact list-inline">
                             <li> <a href="https://www.facebook.com/iitkgpfc/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
                         </ul>
                     </div>
                 </div>
