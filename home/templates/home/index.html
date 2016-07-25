@@ -1,973 +1,987 @@
 {% load staticfiles %}
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <head>
-    <!-- Basic Page Needs
+  <!-- Basic Page Needs
     ================================================== -->
-        <meta charset="utf-8">
-        <title>KOSS-Kharagpur Open Source Society</title>
-        <meta name="description" content="">
-        <!-- Mobile Specific Metas
+  <meta charset="utf-8">
+  <title>KOSS-Kharagpur Open Source Society</title>
+  <meta name="description" content="">
+  <!-- Mobile Specific Metas
     ================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="shortcut icon" href="{% static "images/logo2.jpg"%}" />
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-         <!-- CSS
-         ================================================== -->
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
-        <!-- Animation -->
-        <link rel="stylesheet" href="{% static "css/animate.css" %}"/>
-        <!-- Owl Carousel -->
-        <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}"/>
-        <link rel="stylesheet" href="{% static "css/owl.theme.css" %}"/>
-        <!-- Pretty Photo -->
-        <link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}"/>
-        <!-- Main color style -->
-        <link rel="stylesheet" href="{% static "css/red.css" %}"/>
-        <!-- Template styles-->
-        <link rel="stylesheet" href="{% static "css/custom.css" %}"/>
-
-        <link rel="stylesheet" type="text/css" href="{% static "css/custom-image.css" %}">
-        <link rel="stylesheet" type="text/css" href="{% static "css/ihover.css" %}">
-
-        <!-- Responsive -->
-        <link rel="stylesheet" href="{% static "css/responsive.css" %}"/>
-        <link rel="stylesheet" href="{% static "css/jquery.fancybox8cbb.css?v=2.1.5" %}" type="text/css" media="screen" />
-
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
-    </head>
-
- <body data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <header id="section_header" class="navbar-fixed-top main-nav" role="banner">
-      <div class="container">
-        <!-- <div class="row"> -->
-                 <div class="navbar-header ">
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">
-                            <img src="{% static "images/logo2.jpg" %}" alt=""> <!--Changed logo-->
-                        </a>
-                 </div><!--Navbar header End-->
-                  <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
-                        <ul class="nav navbar-nav navbar-right ">
-                            <li class="active"> <a href="#slider_part" >Home </a></li>
-                         <!--   <li><a href="#service"  >Services</a> </li> --> <!--Commented out the service link-->
-                            <li><a href="{% url 'home:events' %}">Events </a> </li>
-                            <li><a href="#about" >About Us </a> </li>
-                            <li><a href="#team" >Our Team </a> </li>
-                          <!--  <li><a href="#blog" >Blog</a> </li>  --> <!--Commented out blog link -->
-                            <li><a href="#contact" >Contact Us</a> </li>
-                        </ul>
-                     </nav>
-                </div><!-- /.container-fluid -->
-</header>
- <!-- Slider start -->
-    <section id="slider_part">
-         <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
-            <!-- Indicators -->
-           <ol class="carousel-indicators text-center">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-             </ol>
-
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="overlay-slide">
-                  <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
-                </div>
-                <div class="carousel-caption">
-                    <div class="col-md-12 col-xs-12 text-center">
-                      <h2>KOSS</h2>
-                      <h3> Kharagpur <b>Open Source</b> Society </h3>
-                      <div class="line"></div>
-                      <p class="animated3">CODE | TEST | DEBUG | DOCUMENT</p>
-                    </div>
-                </div>
-              </div>
-                <div class="item">
-                    <div class="overlay-slide">
-                        <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
-                </div>
-                <div class="carousel-caption">
-                    <div class="col-md-12 col-xs-12 text-center">
-                    <h2>KOSS</h2>
-                      <h3> Kharagpur <b>Open Source</b> Society </h3>
-                      <div class="line"></div>
-                      <p class="animated2"> Software Development</p>
-                    </div>
-                </div>
-              </div>
-              <div class="item">
-                    <div class="overlay-slide">
-                        <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
-                </div>
-                <div class="carousel-caption">
-                    <div class="col-md-12 col-xs-12 text-center">
-                    <h2>KOSS</h2>
-                      <h3> Kharagpur <b>Open Source</b> Society </h3>
-                      <div class="line"></div>
-                      <p class="animated2"> And much more! </p>
-                    </div>
-                </div>
-              </div>
-
-             </div>    <!-- End Carousel Inner -->
-
-            <!-- Controls -->
-            <div class="slides-control ">
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                  <span><i class="fa fa-angle-left"></i></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                  <span><i class="fa fa-angle-right"></i></span>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!--/ Slider end -->
-
-<div class="clearfix"></div>
-
-<!-- About us start -->
-<section id="about">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{% static "images/logo2.jpg"%}" />
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- CSS
+    ================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+  <!-- Animation -->
+  <link rel="stylesheet" href="{% static "css/animate.css" %}"/>
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/owl.theme.css" %}"/>
+  <!-- Pretty Photo -->
+  <link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}"/>
+  <!-- Main color style -->
+  <link rel="stylesheet" href="{% static "css/red.css" %}"/>
+  <!-- Template styles-->
+  <link rel="stylesheet" href="{% static "css/custom.css" %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static "css/custom-image.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "css/ihover.css" %}">
+  <!-- Responsive -->
+  <link rel="stylesheet" href="{% static "css/responsive.css" %}"/>
+  <link rel="stylesheet" href="{% static "css/jquery.fancybox8cbb.css?v=2.1.5" %}" type="text/css" media="screen" />
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+  <header id="section_header" class="navbar-fixed-top main-nav" role="banner">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="feature_header text-center">
-                    <h3 class="feature_title"><a href="/#about">What <b>We do</b></a></h3>
-                    <h4 class="feature_sub" align="center"> We are a group of Open Source Enthusiasts who focus on something more preliminary and relevant, ”A Love for Coding”.<br>Every year KOSS plans to hold events for familiarizing students with UNIX tools, Linux environment, Git Development Workflow,<br> practice Algorithms and Data Structures, besides conducting workshops on GUI programming, Web development,<br> Android application Development and Hackathons.</h4>
-                    <div class="divider"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="feature-tab">
-               <div class="col-md-2 col-sm-3 col-xs-12">
-                    <ul class="nav nav-tabs main-tab-list text-center" role="tablist">
-                          <li role="presentation" class="active">
-                            <a href="#home" role="tab" data-toggle="tab" >
-                              <div class="single-tab">
-                                    <div class="f-icon">
-                                        <i class="fa fa-laptop"></i>
-                                    </div>
-                                </div>
-                                 <h4>Workshops</h4>
-                            </a>
-                          </li>
-                          <li role="presentation" >
-                            <a href="#profile" role="tab" data-toggle="tab">
-                                <div class="single-tab">
-                                    <div class="f-icon">
-                                        <i class="fa fa-send"></i>
-                                    </div>
-                                </div>
-                                <h4>GSoC</h4>
-                            </a>
-                          </li>
-                          <li role="presentation" >
-                            <a href="#messages" role="tab" data-toggle="tab">
-                                <div class="single-tab">
-                                    <div class="f-icon">
-                                        <i class="fa fa-heart"></i>
-                                    </div>
-                                </div>
-                                <h4>MozSetup</h4>
-                            </a>
-                          </li>
-                          <li role="presentation" >
-                            <a href="#photo" role="tab" data-toggle="tab">
-                                <div class="single-tab">
-                                    <div class="f-icon">
-                                        <i class="fa fa-camera"></i>
-                                    </div>
-                                </div>
-                                <h4>Hackathons</h4>
-                            </a>
-                          </li>
-                            <li role="presentation" >
-                            <a href="#ios" role="tab" data-toggle="tab">
-                              <div class="single-tab">
-                                    <div class="f-icon">
-                                        <i class="fa fa-send"></i>
-                                    </div>
-                                </div>
-                               <h4>MakerParty</h4>
-                            </a>
-                          </li>
-                    </ul>
-                </div>  <!-- col-md-12 end -->
-                <div class="col-md-10 col-sm-9 col-xs-12">
-                    <div class="tab-content main-tab-content">
-                          <div role="tabpanel" class="tab-pane active " id="home">
-                                <div class="col-md-12 col-sm-9">
-                                     <img src="{% static "images/about/workshop.gif" %}" alt="" class="img-responsive">
-                                </div>
-                                <div class="col-md-12 col-sm-9">
-                                    <div class="c-tab">
-                                         <h4>Technical Workshops</h4>
-                                         <p>KOSS organizes various workshops and seminars in the campus in order to continue the healthy culture of Technology and Open Source.</p>
-                                         <br>
-                                         <p>
-                                             We organised the workshop on Applied CS with Android, under the Google Programme. We also organised a workshop on Scratch language, which mainly focussed on game designing.
-                                             To get the people updated with latest improvements in the technical world, last year we organised a workshop on 3D Printing.
-                                         </p>
-                                         <br>
-
-                                    </div>
-                                </div>
-
-                          </div>
-                          <div role="tabpanel" class="tab-pane" id="profile">
-                                <div class="col-md-12 col-sm-9">
-                                     <img src="{% static "images/about/gsoc.gif" %}" alt="" class="img-responsive">
-                                </div>
-                                <div class="col-md-12 col-sm-9">
-                                    <div class="c-tab">
-                                         <h4>Google Summer of Code</h4>
-                                         <p>Google Summer of Code is a global program focused on bringing more student developers into open source software development.
-                                         </p>
-                                         <br>
-                                         <p>
-                                             In the month of January, we organised an Introductory Seminar for the freshers to get to know about this prestigious program. This was followed by a Q&A where previous year participants answered to the queries of other students.
-                                         </p>
-                                         <br>
-                                    </div>
-                                </div>
-                          </div>
-                          <div role="tabpanel" class="tab-pane" id="messages">
-                               <div class="col-md-12 col-sm-9">
-                                     <img src="{% static "images/about/mozset.gif" %}" alt="" class="img-responsive">
-                                </div>
-                               <div class="col-md-12 col-sm-9">
-                                    <div class="c-tab">
-                                         <h4>MozSetup@IITKGP</h4>
-                                         <p>To build up a good community to contribute to Mozilla, KOSS (aka IIT Kharagpur Firefox Club) organized it’s first Event ‘MozSetup@IIT KGP’.</p>
-                                         <br>
-                                         <p>
-                                             The first day witnessed great participation with sessions on various topics like Webmaker and Localizers. The next day was focussed on Bugzilla and hands on for Webmakers and Localizers.
-                                         </p>
-                                         <br>
-                                    </div>
-                                </div>
-                          </div>
-                          <div role="tabpanel" class="tab-pane" id="photo">
-                               <div class="col-md-12 col-sm-9">
-                                     <img src="{% static "images/about/hackathon.gif" %}" alt="" class="img-responsive">
-                                </div>
-                               <div class="col-md-12 col-sm-9">
-                                    <div class="c-tab">
-                                         <h4>Hackathons</h4>
-                                         <p>Hackathons are an important and rather valuable part of the coding culture. It promotes the spirit of code sprints and as a reward provides the ultimate pleasure of building something good.</p>
-                                         <br>
-                                         <p>
-                                             Till date, KOSS has organised two hackathons, under Google and Flipkart. Both of them were centered at building an Android app within 24 hours. The event witnessed huge participation from students of all years.
-                                         </p>
-                                         <br>
-
-                                    </div>
-
-                                </div>
-                          </div>
-                            <div role="tabpanel" class="tab-pane" id="ios">
-                                <div class="col-md-12 col-sm-9">
-                                     <img src="{% static "images/about/maker.gif" %}" alt="" class="img-responsive">
-                                </div>
-                               <div class="col-md-12 col-sm-9">
-                               		<div class="c-tab">
-                                        <h4>MakerParty@KGP aka HTML 1.0</h4>
-                                         <p>Its the autumn semester and the campus is bustling with freshmens. We took this opportunity to introduce them to Firefox club and have a small maker party on 19 August, 2014. </p>
-                                         <br>
-                                         <p>
-                                            The event started with the introduction of the club followed by a workshop on HTML. We introduced webmaker tools like thimble and x-ray goggles to the participants and also opened the thimbles so made up for submission.
-                                         </p>
-                                         <br>
-
-                                    </div>
-
-                                </div>
-                             </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- About us End -->
-
-<!-- Team MEmber Start -->
-<section id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="feature_header text-center">
-                    <h3 class="feature_title"><a href="/#team">Our <b>Team Members</b></a></h3>
-                    <h4 class="feature_sub">We are an amazing team of 28, hardworking and focussed individuals!</h4>
-                    <div class="divider"></div>
-                </div>
-            </div>  <!-- Col-md-12 End -->
-
-            <div id="owl-demo" class="owl-carousel owl-theme team-items">
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/smruti.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Smruti Ranjan Swain</h3>
-                              <p>Manager</p>
-                            </div></a>
-                        </div>
-                        <a class="github-button" href="https://github.com/bad-smruti" data-style="mega" aria-label="Follow @bad-smruti on GitHub">Follow @bad-smruti</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/himanshu_mishra.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Himanshu Mishra</h3>
-                              <p>Executive Lead (Projects and Open source)</p>
-                            </div></a>
-                        </div>
-                        <a class="github-button" href="https://github.com/orkohunter" data-style="mega" aria-label="Follow @orkohunter on GitHub">Follow @orkohunter</a></a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/pranav.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Pranav Kumar</h3>
-                              <p>Executive Lead (Events and Workshop)</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/pranavkumar2015" data-style="mega" aria-label="Follow @pranavkumar2015 on GitHub">Follow @pranavkumar2015</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/avijit.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Avijit Ghosh</h3>
-                              <p>Executive Lead (Publicity and Sponsorship)</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/AvijitGhosh82" data-style="mega" aria-label="Follow @AvijitGhosh82 on GitHub">Follow @AvijitGhosh82</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/kshitij.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Kshitij Saraogi</h3>
-                              <p>Executive Head (Projects and Open Source)</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/kshitij10496" data-style="mega" aria-label="Follow @kshitij10496 on GitHub">Follow @kshitij10496</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/ritam.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Ritam Dutt</h3>
-                              <p>Executive Head (Events and Workshops)</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/Shorit" data-style="mega" aria-label="Follow @Shorit on GitHub">Follow @Shorit</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/pranay.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Pranay Dhote</h3>
-                              <p>Executive Head (Publicity and Sponsorship)</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/pr4nay" data-style="mega" aria-label="Follow @pr4nay on GitHub">Follow @pr4nay</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/amit.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Amit Agarwal</h3>
-                              <p>Executive Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/amitag00" data-style="mega" aria-label="Follow @amitag00 on GitHub">Follow @amitag00</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/mayank.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Mayank Jindal</h3>
-                              <p>Executive Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/mayank-kgp" data-style="mega" aria-label="Follow @mayank-kgp on GitHub">Follow @mayank-kgp</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                 <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/aakash.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Aakash Singh</h3>
-                              <p>Executive Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/AakashSingh01" data-style="mega" aria-label="Follow @AakashSingh01 on GitHub">Follow @AakashSingh01</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-                 <div class="item text-center">
-                    <div class="single-member">
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/nishant.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Nishant Nikhil</h3>
-                              <p>Executive Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/nishnik" data-style="mega" aria-label="Follow @nishnik on GitHub">Follow @nishnik</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/anirban.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Anirban Mitra</h3>
-                              <p>Executive Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/anirbanmitra1007" data-style="mega" aria-label="Follow @anirbanmitra1007 on GitHub">Follow @anirbanmitra1007</a>
-                    </div>
-                </div>  <!-- item wrapper end -->
-
- <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/ayush.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Ayush Goyal</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/defcon-007" data-style="mega" aria-label="Follow @defcon-007 on GitHub">Follow @defcon-007</a>
-                    </div>
-                </div>
-                <!--end -->
-
-<!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/neha.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Neha Mokmod</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/navyamokmod" data-style="mega" aria-label="Follow @navyamokmod on GitHub">Follow @navyamokmod</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/nitin.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Nitin Choudhary</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                                    <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/nitch13jan" data-style="mega" aria-label="Follow @nitch13jan on GitHub">Follow @nitch13jan</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/parikshit.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Parikshit Soni</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/parikshit-soni" data-style="mega" aria-label="Follow @parikshit-soni on GitHub">Follow @parikshit-soni</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/parth.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Parth Verma</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/Parth-Vader" data-style="mega" aria-label="Follow @Parth-Vader on GitHub">Follow @Parth-Vader</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/pranit.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Pranit Bauva</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                         <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/pranitbauva1997" data-style="mega" aria-label="Follow @pranitbauva1997 on GitHub">Follow @pranitbauva1997</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/prathamesh.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Prathamesh Chavan</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                           <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/pratham-pc" data-style="mega" aria-label="Follow @pratham-pc on GitHub">Follow @pratham-pc</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/rishabh.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Rishabh Madan</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                        <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/madan96" data-style="mega" aria-label="Follow @madan96 on GitHub">Follow @madan96</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/saksham.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Saksham Bhalla</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                          <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/saksham0037" data-style="mega" aria-label="Follow @saksham0037 on GitHub">Follow @saksham0037</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/samriddhi.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Samriddhi Sinha</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                          <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/djokester" data-style="mega" aria-label="Follow @djokester on GitHub">Follow @djokester</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/shikha.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Shikha Panwar</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                           <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/shikhapanwar" data-style="mega" aria-label="Follow @shikhapanwar on GitHub">Follow @shikhapanwar</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/shubham.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Shubham</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                          <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/shubham5" data-style="mega" aria-label="Follow @shubham5 on GitHub">Follow @shubham5</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/siddhant.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Siddhant Shaw</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                          <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/mianto" data-style="mega" aria-label="Follow @mianto on GitHub">Follow @mianto</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/sourav.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Sourav Kundu</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                           <!-- Place this tag where you want the button to render. -->
-                            <a class="github-button" href="https://github.com/sokusoku" data-style="mega" aria-label="Follow @sokusoku on GitHub">Follow @sokusoku</a>
-                    </div>
-                </div>
-                <!--end -->
-                <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/sumeet.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Sumeet Shirgure</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                       <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/sumeetshirgure" data-style="mega" aria-label="Follow @sumeetshirgure on GitHub">Follow @sumeetshirgure</a>
-                    </div>
-                </div>
-                <!--end -->
-                    <!-- begin -->
-                 <div class="item text-center">
-                    <div class="single-member">
-
-                         <div class="ih-item square colored effect4"><a href="#">
-                            <div class="img"><img src="{% static "images/team/yash.jpg" %}" alt="img"></div>
-                            <div class="mask1"></div>
-                            <div class="mask2"></div>
-                            <div class="info">
-                              <h3>Yash Gaurkar</h3>
-                              <p>Committee Member</p>
-                            </div></a>
-                        </div>
-                         <!-- Place this tag where you want the button to render. -->
-                        <a class="github-button" href="https://github.com/mr-yamraj" data-style="mega" aria-label="Follow @mr-yamraj on GitHub">Follow @mr-yamraj</a>
-                    </div>
-                </div>
-                <!--end -->
-
-            </div>
-        </div>
-    </div> <!-- Conatiner Team end -->
-    <!-- </div> -->
-
-</section>  <!-- Section TEam End -->
-
-<!-- Our Team Members End -->
-<div class="clearfix"></div>
-
-
-<div class="clearfix"></div>
-
-<!-- Conatct Area Start-->
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="feature_header text-center">
-                    <h3 class="feature_title"><a href="/#contact">Keep In <b>touch</b></a></h3>
-                    <h4 class="feature_sub">Do drop a mail :)</h4>
-                    <div class="divider"></div>
-                </div>
-        </div>
-        </div>
-        <div class="row">
-             <div class="contact_full">
-                <div class="col-md-6 left">
-                    <div class="left_contact">
-                        <form action="http://www.shape.themeturn.com/html/cyprass/homepage/role">
-                            <div class="form-level">
-                                <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
-                                <span class="form-icon fa fa-user"></span>
-                            </div>
-                            <div class="form-level">
-                                <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
-                                <span class="form-icon fa fa-envelope-o"></span>
-                            </div>
-                            <div class="form-level">
-                                <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
-                                <span class="form-icon fa fa-phone"></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-md-6 right">
-                    <div class="form-level">
-                        <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
-                        <span class="form-icon fa fa-pencil"></span>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center">
-                    <button class="btn btn-main featured">Submit Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="footer">
-    <div class="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Main Menu</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#about">Home</a></li>
-                          <!--  <li><a href="#service">Service</a></li>  -->
-                            <li><a href="{% url 'home:events' %}">Events</a></li>
-                           <!-- <li><a href="#blog">Blog</a></li>   -->
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6" style="position: relative; left:15%;">
-                    <h3 class="menu_head">Contact us</h3>
-                    <div class="footer_menu_contact">
-                        <ul>
-                            <li> <i class="fa fa-home"></i>
-                                <span>IIT Kharagpur  </span></li>
-                            <li><i class="fa fa-globe"></i>
-                                <span> kossiitkgp@gmail.com</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-12" style="position: relative; left:30%;">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="https://opensource.org/" target="_blank"> Open Source</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="footer_b">
-        <div class="container">
-            <div class="row" style="padding-bottom: 20px;">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_bottom" >
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_mid pull-right">
-                        <ul class="social-contact list-inline">
-                            <li> <a href="https://www.facebook.com/iitkgpfc/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="mailto:kossiitkgp@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer Area End -->
-
-<!-- Back To Top Button -->
-    <div id="back-top">
-        <a href="#slider_part" class="scroll" data-scroll>
-            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
+      <!-- <div class="row"> -->
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="{% static "images/logo2.jpg" %}" alt=""> <!--Changed logo-->
         </a>
+      </div>
+      <!--Navbar header End-->
+      <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" role="navigation">
+        <ul class="nav navbar-nav navbar-right ">
+          <li class="active"> <a href="#slider_part" >Home </a></li>
+          <!--   <li><a href="#service"  >Services</a> </li> --> <!--Commented out the service link-->
+          <li><a href="{% url 'home:events' %}">Events </a> </li>
+          <li><a href="#about" >About Us </a> </li>
+          <li><a href="#team" >Our Team </a> </li>
+          <!--  <li><a href="#blog" >Blog</a> </li>  --> <!--Commented out blog link -->
+          <li><a href="#contact" >Contact Us</a> </li>
+        </ul>
+      </nav>
     </div>
-    <!-- End Back To Top Button -->
-
-
-
-<!-- Javascript Files
+    <!-- /.container-fluid -->
+  </header>
+  <!-- Slider start -->
+  <section id="slider_part">
+    <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators text-center">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="overlay-slide">
+            <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
+          </div>
+          <div class="carousel-caption">
+            <div class="col-md-12 col-xs-12 text-center">
+              <h2>KOSS</h2>
+              <h3> Kharagpur <b>Open Source</b> Society </h3>
+              <div class="line"></div>
+              <p class="animated3">CODE | TEST | DEBUG | DOCUMENT</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="overlay-slide">
+            <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
+          </div>
+          <div class="carousel-caption">
+            <div class="col-md-12 col-xs-12 text-center">
+              <h2>KOSS</h2>
+              <h3> Kharagpur <b>Open Source</b> Society </h3>
+              <div class="line"></div>
+              <p class="animated2"> Software Development</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="overlay-slide">
+            <img src="{% static "images/banner/banner_koss1.jpg" %}" alt="" class="img-responsive">
+          </div>
+          <div class="carousel-caption">
+            <div class="col-md-12 col-xs-12 text-center">
+              <h2>KOSS</h2>
+              <h3> Kharagpur <b>Open Source</b> Society </h3>
+              <div class="line"></div>
+              <p class="animated2"> And much more! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Carousel Inner -->
+      <!-- Controls -->
+      <div class="slides-control ">
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span><i class="fa fa-angle-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--/ Slider end -->
+  <div class="clearfix"></div>
+  <!-- About us start -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="feature_header text-center">
+            <h3 class="feature_title"><a href="/#about">What <b>We do</b></a></h3>
+            <h4 class="feature_sub" align="center"> We are a group of Open Source Enthusiasts who focus on something more preliminary and relevant, ”A Love for Coding”.<br>Every year KOSS plans to hold events for familiarizing students with UNIX tools, Linux environment, Git Development Workflow,<br> practice Algorithms and Data Structures, besides conducting workshops on GUI programming, Web development,<br> Android application Development and Hackathons.</h4>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="feature-tab">
+          <div class="col-md-2 col-sm-3 col-xs-12">
+            <ul class="nav nav-tabs main-tab-list text-center" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#home" role="tab" data-toggle="tab" >
+                  <div class="single-tab">
+                    <div class="f-icon">
+                      <i class="fa fa-laptop"></i>
+                    </div>
+                  </div>
+                  <h4>Workshops</h4>
+                </a>
+              </li>
+              <li role="presentation" >
+                <a href="#profile" role="tab" data-toggle="tab">
+                  <div class="single-tab">
+                    <div class="f-icon">
+                      <i class="fa fa-send"></i>
+                    </div>
+                  </div>
+                  <h4>GSoC</h4>
+                </a>
+              </li>
+              <li role="presentation" >
+                <a href="#messages" role="tab" data-toggle="tab">
+                  <div class="single-tab">
+                    <div class="f-icon">
+                      <i class="fa fa-heart"></i>
+                    </div>
+                  </div>
+                  <h4>MozSetup</h4>
+                </a>
+              </li>
+              <li role="presentation" >
+                <a href="#photo" role="tab" data-toggle="tab">
+                  <div class="single-tab">
+                    <div class="f-icon">
+                      <i class="fa fa-camera"></i>
+                    </div>
+                  </div>
+                  <h4>Hackathons</h4>
+                </a>
+              </li>
+              <li role="presentation" >
+                <a href="#ios" role="tab" data-toggle="tab">
+                  <div class="single-tab">
+                    <div class="f-icon">
+                      <i class="fa fa-send"></i>
+                    </div>
+                  </div>
+                  <h4>MakerParty</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- col-md-12 end -->
+          <div class="col-md-10 col-sm-9 col-xs-12">
+            <div class="tab-content main-tab-content">
+              <div role="tabpanel" class="tab-pane active " id="home">
+                <div class="col-md-12 col-sm-9">
+                  <img src="{% static "images/about/workshop.gif" %}" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-12 col-sm-9">
+                  <div class="c-tab">
+                    <h4>Technical Workshops</h4>
+                    <p>KOSS organizes various workshops and seminars in the campus in order to continue the healthy culture of Technology and Open Source.</p>
+                    <br>
+                    <p>
+                      We organised the workshop on Applied CS with Android, under the Google Programme. We also organised a workshop on Scratch language, which mainly focussed on game designing.
+                      To get the people updated with latest improvements in the technical world, last year we organised a workshop on 3D Printing.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="profile">
+                <div class="col-md-12 col-sm-9">
+                  <img src="{% static "images/about/gsoc.gif" %}" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-12 col-sm-9">
+                  <div class="c-tab">
+                    <h4>Google Summer of Code</h4>
+                    <p>Google Summer of Code is a global program focused on bringing more student developers into open source software development.
+                    </p>
+                    <br>
+                    <p>
+                      In the month of January, we organised an Introductory Seminar for the freshers to get to know about this prestigious program. This was followed by a Q&A where previous year participants answered to the queries of other students.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="messages">
+                <div class="col-md-12 col-sm-9">
+                  <img src="{% static "images/about/mozset.gif" %}" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-12 col-sm-9">
+                  <div class="c-tab">
+                    <h4>MozSetup@IITKGP</h4>
+                    <p>To build up a good community to contribute to Mozilla, KOSS (aka IIT Kharagpur Firefox Club) organized it’s first Event ‘MozSetup@IIT KGP’.</p>
+                    <br>
+                    <p>
+                      The first day witnessed great participation with sessions on various topics like Webmaker and Localizers. The next day was focussed on Bugzilla and hands on for Webmakers and Localizers.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="photo">
+                <div class="col-md-12 col-sm-9">
+                  <img src="{% static "images/about/hackathon.gif" %}" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-12 col-sm-9">
+                  <div class="c-tab">
+                    <h4>Hackathons</h4>
+                    <p>Hackathons are an important and rather valuable part of the coding culture. It promotes the spirit of code sprints and as a reward provides the ultimate pleasure of building something good.</p>
+                    <br>
+                    <p>
+                      Till date, KOSS has organised two hackathons, under Google and Flipkart. Both of them were centered at building an Android app within 24 hours. The event witnessed huge participation from students of all years.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="ios">
+                <div class="col-md-12 col-sm-9">
+                  <img src="{% static "images/about/maker.gif" %}" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-12 col-sm-9">
+                  <div class="c-tab">
+                    <h4>MakerParty@KGP aka HTML 1.0</h4>
+                    <p>Its the autumn semester and the campus is bustling with freshmens. We took this opportunity to introduce them to Firefox club and have a small maker party on 19 August, 2014. </p>
+                    <br>
+                    <p>
+                      The event started with the introduction of the club followed by a workshop on HTML. We introduced webmaker tools like thimble and x-ray goggles to the participants and also opened the thimbles so made up for submission.
+                    </p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us End -->
+  <!-- Team MEmber Start -->
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="feature_header text-center">
+            <h3 class="feature_title"><a href="/#team">Our <b>Team Members</b></a></h3>
+            <h4 class="feature_sub">We are an amazing team of 28, hardworking and focussed individuals!</h4>
+            <div class="divider"></div>
+          </div>
+        </div>
+        <!-- Col-md-12 End -->
+        <div id="owl-demo" class="owl-carousel owl-theme team-items">
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/smruti.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Smruti Ranjan Swain</h3>
+                    <p>Manager</p>
+                  </div>
+                </a>
+              </div>
+              <a class="github-button" href="https://github.com/bad-smruti" data-style="mega" aria-label="Follow @bad-smruti on GitHub">Follow @bad-smruti</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/himanshu_mishra.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Himanshu Mishra</h3>
+                    <p>Executive Lead (Projects and Open source)</p>
+                  </div>
+                </a>
+              </div>
+              <a class="github-button" href="https://github.com/orkohunter" data-style="mega" aria-label="Follow @orkohunter on GitHub">Follow @orkohunter</a></a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/pranav.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Pranav Kumar</h3>
+                    <p>Executive Lead (Events and Workshop)</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/pranavkumar2015" data-style="mega" aria-label="Follow @pranavkumar2015 on GitHub">Follow @pranavkumar2015</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/avijit.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Avijit Ghosh</h3>
+                    <p>Executive Lead (Publicity and Sponsorship)</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/AvijitGhosh82" data-style="mega" aria-label="Follow @AvijitGhosh82 on GitHub">Follow @AvijitGhosh82</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/kshitij.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Kshitij Saraogi</h3>
+                    <p>Executive Head (Projects and Open Source)</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/kshitij10496" data-style="mega" aria-label="Follow @kshitij10496 on GitHub">Follow @kshitij10496</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/ritam.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Ritam Dutt</h3>
+                    <p>Executive Head (Events and Workshops)</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/Shorit" data-style="mega" aria-label="Follow @Shorit on GitHub">Follow @Shorit</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/pranay.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Pranay Dhote</h3>
+                    <p>Executive Head (Publicity and Sponsorship)</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/pr4nay" data-style="mega" aria-label="Follow @pr4nay on GitHub">Follow @pr4nay</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/amit.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Amit Agarwal</h3>
+                    <p>Executive Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/amitag00" data-style="mega" aria-label="Follow @amitag00 on GitHub">Follow @amitag00</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/mayank.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Mayank Jindal</h3>
+                    <p>Executive Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/mayank-kgp" data-style="mega" aria-label="Follow @mayank-kgp on GitHub">Follow @mayank-kgp</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/aakash.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Aakash Singh</h3>
+                    <p>Executive Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/AakashSingh01" data-style="mega" aria-label="Follow @AakashSingh01 on GitHub">Follow @AakashSingh01</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/nishant.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Nishant Nikhil</h3>
+                    <p>Executive Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/nishnik" data-style="mega" aria-label="Follow @nishnik on GitHub">Follow @nishnik</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/anirban.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Anirban Mitra</h3>
+                    <p>Executive Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/anirbanmitra1007" data-style="mega" aria-label="Follow @anirbanmitra1007 on GitHub">Follow @anirbanmitra1007</a>
+            </div>
+          </div>
+          <!-- item wrapper end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/ayush.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Ayush Goyal</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/defcon-007" data-style="mega" aria-label="Follow @defcon-007 on GitHub">Follow @defcon-007</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/neha.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Neha Mokmod</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/navyamokmod" data-style="mega" aria-label="Follow @navyamokmod on GitHub">Follow @navyamokmod</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/nitin.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Nitin Choudhary</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/nitch13jan" data-style="mega" aria-label="Follow @nitch13jan on GitHub">Follow @nitch13jan</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/parikshit.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Parikshit Soni</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/parikshit-soni" data-style="mega" aria-label="Follow @parikshit-soni on GitHub">Follow @parikshit-soni</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/parth.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Parth Verma</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/Parth-Vader" data-style="mega" aria-label="Follow @Parth-Vader on GitHub">Follow @Parth-Vader</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/pranit.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Pranit Bauva</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/pranitbauva1997" data-style="mega" aria-label="Follow @pranitbauva1997 on GitHub">Follow @pranitbauva1997</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/prathamesh.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Prathamesh Chavan</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/pratham-pc" data-style="mega" aria-label="Follow @pratham-pc on GitHub">Follow @pratham-pc</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/rishabh.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Rishabh Madan</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/madan96" data-style="mega" aria-label="Follow @madan96 on GitHub">Follow @madan96</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/saksham.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Saksham Bhalla</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/saksham0037" data-style="mega" aria-label="Follow @saksham0037 on GitHub">Follow @saksham0037</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/samriddhi.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Samriddhi Sinha</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/djokester" data-style="mega" aria-label="Follow @djokester on GitHub">Follow @djokester</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/shikha.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Shikha Panwar</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/shikhapanwar" data-style="mega" aria-label="Follow @shikhapanwar on GitHub">Follow @shikhapanwar</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/shubham.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Shubham</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/shubham5" data-style="mega" aria-label="Follow @shubham5 on GitHub">Follow @shubham5</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/siddhant.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Siddhant Shaw</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/mianto" data-style="mega" aria-label="Follow @mianto on GitHub">Follow @mianto</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/sourav.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Sourav Kundu</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/sokusoku" data-style="mega" aria-label="Follow @sokusoku on GitHub">Follow @sokusoku</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/sumeet.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Sumeet Shirgure</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/sumeetshirgure" data-style="mega" aria-label="Follow @sumeetshirgure on GitHub">Follow @sumeetshirgure</a>
+            </div>
+          </div>
+          <!--end -->
+          <!-- begin -->
+          <div class="item text-center">
+            <div class="single-member">
+              <div class="ih-item square colored effect4">
+                <a href="#">
+                  <div class="img"><img src="{% static "images/team/yash.jpg" %}" alt="img"></div>
+                  <div class="mask1"></div>
+                  <div class="mask2"></div>
+                  <div class="info">
+                    <h3>Yash Gaurkar</h3>
+                    <p>Committee Member</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Place this tag where you want the button to render. -->
+              <a class="github-button" href="https://github.com/mr-yamraj" data-style="mega" aria-label="Follow @mr-yamraj on GitHub">Follow @mr-yamraj</a>
+            </div>
+          </div>
+          <!--end -->
+        </div>
+      </div>
+    </div>
+    <!-- Conatiner Team end -->
+    <!-- </div> -->
+  </section>
+  <!-- Section TEam End -->
+  <!-- Our Team Members End -->
+  <div class="clearfix"></div>
+  <div class="clearfix"></div>
+  <!-- Conatct Area Start-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="feature_header text-center">
+            <h3 class="feature_title"><a href="/#contact">Keep In <b>touch</b></a></h3>
+            <h4 class="feature_sub">Do drop a mail :)</h4>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contact_full">
+          <div class="col-md-6 left">
+            <div class="left_contact">
+              <form action="http://www.shape.themeturn.com/html/cyprass/homepage/role">
+                <div class="form-level">
+                  <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                  <span class="form-icon fa fa-user"></span>
+                </div>
+                <div class="form-level">
+                  <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
+                  <span class="form-icon fa fa-envelope-o"></span>
+                </div>
+                <div class="form-level">
+                  <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
+                  <span class="form-icon fa fa-phone"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 right">
+            <div class="form-level">
+              <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
+              <span class="form-icon fa fa-pencil"></span>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <button class="btn btn-main featured">Submit Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h3 class="menu_head">Main Menu</h3>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="#about">Home</a></li>
+                <!--  <li><a href="#service">Service</a></li>  -->
+                <li><a href="{% url 'home:events' %}">Events</a></li>
+                <!-- <li><a href="#blog">Blog</a></li>   -->
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6" style="position: relative; left:15%;">
+            <h3 class="menu_head">Contact us</h3>
+            <div class="footer_menu_contact">
+              <ul>
+                <li> <i class="fa fa-home"></i>
+                  <span>IIT Kharagpur  </span>
+                </li>
+                <li><i class="fa fa-globe"></i>
+                  <span> kossiitkgp@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12" style="position: relative; left:30%;">
+            <h3 class="menu_head">Tags</h3>
+            <div class="footer_menu tags">
+              <a href="https://opensource.org/" target="_blank"> Open Source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_b">
+      <div class="container">
+        <div class="row" style="padding-bottom: 20px;">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="footer_bottom" >
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="footer_mid pull-right">
+              <ul class="social-contact list-inline">
+                <li> <a href="https://www.facebook.com/iitkgpfc/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="mailto:kossiitkgp@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Area End -->
+  <!-- Back To Top Button -->
+  <div id="back-top">
+    <a href="#slider_part" class="scroll" data-scroll>
+    <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
+    </a>
+  </div>
+  <!-- End Back To Top Button -->
+  <!-- Javascript Files
     ================================================== -->
-    <!-- initialize jQuery Library -->
-
-    <!-- initialize jQuery Library -->
-        <!-- Main jquery -->
-        <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
-        <!-- Bootstrap jQuery -->
-         <script src="{% static "js/bootstrap.min.js" %}"></script>
-        <!-- Owl Carousel -->
-        <script src="{% static "js/owl.carousel.min.js" %}"></script>
-        <!-- Isotope -->
-        <script src="{% static "js/jquery.isotope.js" %}"></script>
-        <!-- Pretty Photo -->
-        <script type="text/javascript" src="{% static "js/jquery.prettyPhoto.js" %}"></script>
-        <!-- SmoothScroll -->
-        <script type="text/javascript" src="{% static "js/smooth-scroll.js" %}"></script>
-        <!-- Image Fancybox -->
-        <script type="text/javascript" src="{% static "js/jquery.fancybox.pack8cbb.js?v=2.1.5" %}"></script>
-        <!-- Counter  -->
-        <script type="text/javascript" src="{% static "js/jquery.counterup.min.js" %}"></script>
-        <!-- waypoints -->
-        <script type="text/javascript" src="{% static "js/waypoints.min.js" %}"></script>
-        <!-- Bx slider -->
-        <script type="text/javascript" src="{% static "js/jquery.bxslider.min.js" %}"></script>
-        <!-- Scroll to top -->
-        <script type="text/javascript" src="{% static "js/jquery.scrollTo.js" %}"></script>
-        <!-- Easing js -->
-        <script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script>
-       <!-- PrettyPhoto -->
-        <script src="{% static "js/jquery.singlePageNav.js" %}"></script>
-        <!-- Wow Animation -->
-        <script type="{% static "js/javascript" %}" src="{% static "js/wow.min.js" %}"></script>
-
-        <!-- Place this tag in your head or just before your close body tag. -->
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-        <!-- Google Map  Source -->
-        <script type="text/javascript" src="{% static "js/gmaps.js" %}"></script>
-       <!-- Custom js -->
-        <script src="{% static "js/custom.js" %}"></script>
-       <script>
+  <!-- initialize jQuery Library -->
+  <!-- initialize jQuery Library -->
+  <!-- Main jquery -->
+  <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+  <!-- Bootstrap jQuery -->
+  <script src="{% static "js/bootstrap.min.js" %}"></script>
+  <!-- Owl Carousel -->
+  <script src="{% static "js/owl.carousel.min.js" %}"></script>
+  <!-- Isotope -->
+  <script src="{% static "js/jquery.isotope.js" %}"></script>
+  <!-- Pretty Photo -->
+  <script type="text/javascript" src="{% static "js/jquery.prettyPhoto.js" %}"></script>
+  <!-- SmoothScroll -->
+  <script type="text/javascript" src="{% static "js/smooth-scroll.js" %}"></script>
+  <!-- Image Fancybox -->
+  <script type="text/javascript" src="{% static "js/jquery.fancybox.pack8cbb.js?v=2.1.5" %}"></script>
+  <!-- Counter  -->
+  <script type="text/javascript" src="{% static "js/jquery.counterup.min.js" %}"></script>
+  <!-- waypoints -->
+  <script type="text/javascript" src="{% static "js/waypoints.min.js" %}"></script>
+  <!-- Bx slider -->
+  <script type="text/javascript" src="{% static "js/jquery.bxslider.min.js" %}"></script>
+  <!-- Scroll to top -->
+  <script type="text/javascript" src="{% static "js/jquery.scrollTo.js" %}"></script>
+  <!-- Easing js -->
+  <script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script>
+  <!-- PrettyPhoto -->
+  <script src="{% static "js/jquery.singlePageNav.js" %}"></script>
+  <!-- Wow Animation -->
+  <script type="{% static "js/javascript" %}" src="{% static "js/wow.min.js" %}"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Google Map  Source -->
+  <script type="text/javascript" src="{% static "js/gmaps.js" %}"></script>
+  <!-- Custom js -->
+  <script src="{% static "js/custom.js" %}"></script>
+  <script>
     // Google Map - with support of gmaps.js
      var map;
         map = new GMaps({
@@ -988,8 +1002,10 @@
           },
           icon: "{% static "images/map1.png" %}"
         });
-        </script>
 
-    </body>
+  </script>
+</body>
+
+<!-- Format html using http://www.freeformatter.com/html-formatter.html with 2 spaces per indentation -->
 
 </html>
