@@ -12,3 +12,8 @@ def events(request):
     context = {}
 
     return render(request, 'home/events.html', context)
+
+def termninal(request):
+    context = {}
+
+    return render(request, 'home/terminal.html', context)
